@@ -1,0 +1,72 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+
+}
+
+.table-container {
+  margin: 50px 0;
+}
+
+table {
+  position: relative;
+  overflow: visible;
+  background-color: white;
+  width: 400px;
+  border-radius:10px;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;}
+
+
+th,
+td {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px 50px;
+}
+
+thead tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+thead tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+th:first-child,
+td:first-child {
+  border-left: none; /* Remove inner left border */
+}
+
+th:last-child,
+td:last-child {
+  border-right: none; /* Remove inner right border */
+}
+
+th {
+  font-weight: bold;
+}
+
+
+.add_row_btn {
+  margin-top: 20px;
+  float: right;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #202123;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
